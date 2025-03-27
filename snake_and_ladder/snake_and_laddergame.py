@@ -24,7 +24,7 @@ class SnakeLadder:
             if self.position < 0:
                 self.position = 0
 
-        print(f"Dice rolled: {dice_value}, Option: {option}, New Position: {self.position}")
+        print(f"Roll {self.dice_rolls}: Dice rolled {dice_value}, Option: {option}, New Position: {self.position}")
 
     def play_game(self):
         while self.position < 100:
