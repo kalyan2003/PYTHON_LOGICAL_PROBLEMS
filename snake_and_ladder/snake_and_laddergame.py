@@ -38,7 +38,7 @@ class SnakeLadder:
     def play_game(self):
         """
         Will call the play turn function until the game is over
-        
+
 
         """
         players = ["Player 1", "Player 2"]
