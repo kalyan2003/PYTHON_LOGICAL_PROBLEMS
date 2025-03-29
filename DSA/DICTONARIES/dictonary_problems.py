@@ -117,3 +117,59 @@ for key, value in my_dict.items():
     name, age, course = value
     print("{:<10} {:<10} {:<10}".format(name, age, course))
 
+
+## Find the count of the true repeating in the dictionaries
+my_dict = [{'id': 1,'success':True,'name':'Lary'},{'id': 2,'success':False,'name':'Rabi'},{'id': 3,'success':True,'name':'Alex'}]
+
+count = 0
+
+for item in my_dict:
+    if item['success'] == True:
+        count = count+1
+
+print(count)
+
+
+##Converting lists into Nested dictionary
+a = [1,2,3]
+b = ['ragu','ramu','raju']
+c = [21,24,26]
+
+res = {}
+
+for i,j,k in zip(a,b,c):
+    res[i] = {j: k}
+
+print(res)
+
+## To check whether a dictionaayr is having multiple keys or not
+
+my_dict = {
+    1: ["pavan", 21, 'python'],
+    2: ["kalyan", 22, 'sql'],
+    3: ["chimmiri", 23, 'java'],
+}
+
+if len(my_dict) > 1:
+    print ("Multiple keys are present in the dictionary")
+else:
+    print("Multiple keys are not present")
+
+## To check how many items in the dictionary are lists
+
+my_dict = {
+    1: ["pavan", 21, 'python'],
+    2: ["kalyan", 22, 'sql'],
+    3: ["chimmiri", 23, 'java'],
+    4: "pavan"
+}
+
+count = 0
+for key in my_dict:
+    if type(my_dict[key]) == list :
+        count += 1
+
+
+print(count)
+
+
