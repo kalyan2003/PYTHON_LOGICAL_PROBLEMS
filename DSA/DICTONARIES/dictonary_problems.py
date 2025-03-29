@@ -117,3 +117,105 @@ for key, value in my_dict.items():
     name, age, course = value
     print("{:<10} {:<10} {:<10}".format(name, age, course))
 
+
+## Find the count of the true repeating in the dictionaries
+my_dict = [{'id': 1,'success':True,'name':'Lary'},{'id': 2,'success':False,'name':'Rabi'},{'id': 3,'success':True,'name':'Alex'}]
+
+count = 0
+
+for item in my_dict:
+    if item['success'] == True:
+        count = count+1
+
+print(count)
+
+
+##Converting lists into Nested dictionary
+a = [1,2,3]
+b = ['ragu','ramu','raju']
+c = [21,24,26]
+
+res = {}
+
+for i,j,k in zip(a,b,c):
+    res[i] = {j: k}
+
+print(res)
+
+## To check whether a dictionaayr is having multiple keys or not
+
+my_dict = {
+    1: ["pavan", 21, 'python'],
+    2: ["kalyan", 22, 'sql'],
+    3: ["chimmiri", 23, 'java'],
+}
+
+if len(my_dict) > 1:
+    print ("Multiple keys are present in the dictionary")
+else:
+    print("Multiple keys are not present")
+
+## To check how many items in the dictionary are lists
+
+my_dict = {
+    1: ["pavan", 21, 'python'],
+    2: ["kalyan", 22, 'sql'],
+    3: ["chimmiri", 23, 'java'],
+    4: "pavan"
+}
+
+count = 0
+for key in my_dict:
+    if type(my_dict[key]) == list :
+        count += 1
+
+
+print(count)
+
+##Difference between two lists
+
+my_lst1 = [1,2,3,4]
+my_lst2 = [3,4,5,6,7]
+
+diff_lst = list(set(my_lst1) - set(my_lst2))
+
+print(diff_lst)
+
+## Append list1 to another list
+
+my_lst1 = [1,2,3,4]
+my_lst2 = [3,4,5,6,7]
+
+my_lst1.extend(my_lst2)
+print(my_lst1)
+
+## Finding circular identical
+
+
+a = [10, 10, 10, 0, 0]
+
+b = [0, 0, 10, 10, 10]
+
+
+def Circular_list(a, b):
+    n = len(a)
+    c = False
+    for i in range(n):
+        if a[i:] + a[:i] == b:
+            c = True
+            break
+
+    return c
+
+print(Circular_list(a, b))
+
+## Finding the common elements in the two lists
+
+a = [1,2,3,4]
+
+b = [1,2,3]
+
+a = list(set(a) & set(b))
+
+print(a)
+
