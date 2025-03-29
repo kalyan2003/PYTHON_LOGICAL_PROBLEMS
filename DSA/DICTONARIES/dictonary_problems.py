@@ -172,4 +172,50 @@ for key in my_dict:
 
 print(count)
 
+##Difference between two lists
+
+my_lst1 = [1,2,3,4]
+my_lst2 = [3,4,5,6,7]
+
+diff_lst = list(set(my_lst1) - set(my_lst2))
+
+print(diff_lst)
+
+## Append list1 to another list
+
+my_lst1 = [1,2,3,4]
+my_lst2 = [3,4,5,6,7]
+
+my_lst1.extend(my_lst2)
+print(my_lst1)
+
+## Finding circular identical
+
+
+a = [10, 10, 10, 0, 0]
+
+b = [0, 0, 10, 10, 10]
+
+
+def Circular_list(a, b):
+    n = len(a)
+    c = False
+    for i in range(n):
+        if a[i:] + a[:i] == b:
+            c = True
+            break
+
+    return c
+
+print(Circular_list(a, b))
+
+## Finding the common elements in the two lists
+
+a = [1,2,3,4]
+
+b = [1,2,3]
+
+a = list(set(a) & set(b))
+
+print(a)
 
