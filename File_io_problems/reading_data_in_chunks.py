@@ -1,4 +1,4 @@
-file = open("my_file.txt","r")
+file = open("../Working_With_Modules/my_file.txt", "r")
 
 while True:
     data_chunk = file.read(1024)
