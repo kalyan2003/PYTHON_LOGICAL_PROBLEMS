@@ -1,4 +1,4 @@
-file = open("my_file.txt","r")
+file = open("../Working_With_Modules/my_file.txt", "r")
 text = file.read()
 file.close()
 

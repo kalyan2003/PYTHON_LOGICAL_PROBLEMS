@@ -1,5 +1,5 @@
 
-file1 = open("my_file.txt","r")
+file1 = open("../Working_With_Modules/my_file.txt", "r")
 lines1 = file1.readlines()
 
 file2 = open("output_file2.txt","r")

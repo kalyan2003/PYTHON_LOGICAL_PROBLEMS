@@ -1,4 +1,4 @@
-file1 = open("my_file.txt","r")
+file1 = open("../Working_With_Modules/my_file.txt", "r")
 file2 = open("output_file.txt","r")
 
 file3 = open("output_file2.txt","w")
